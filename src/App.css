@@ -1,0 +1,293 @@
+html{
+    scroll-behavior:smooth;
+    transition: 2.5s;
+}
+
+body{
+    margin: 0 0 0 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    color:white;
+    margin: 0;
+}
+
+.introPage{
+    background-color: black;
+    background-image: url(./Images/Background.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position-x: 70%;
+    height: 100vh;
+    display: block;
+}
+
+
+.projectsPage{
+    height: 100vh;
+    display: block;
+    background-color: black;
+}
+
+h1:hover{
+    color: rgb(15, 79, 255);
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+h1{
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 18px;
+    margin: 0;
+}
+
+h2{
+    color: white;
+    font-family: 'Audiowide', cursive;
+    font-size: 38px;
+    margin: 0;
+}
+
+h3{
+    color:white;
+    margin: 0;
+}
+
+h4{
+    color: white;
+    font-family: 'Audiowide', cursive;
+    font-size: 38px;
+    margin: 0;
+}
+
+.NavBar{
+    margin:0 0 0 0;
+    width: 100%;
+    height: 10vh;
+    min-height: fit-content;
+    background-color: black;
+    position: fixed;
+
+    display: flex;
+    align-content: center;
+}
+
+.NavLinks{
+    margin: 0 0 0 3%;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    gap: 2vw;
+    align-content: flex-start;
+}
+
+.NavLogo{
+    width: auto;
+    margin: 0 0 0 6%;
+    text-align: center;
+    align-self: center;
+}
+
+h4:hover{
+    color: rgb(15, 79, 255);
+    transition: 0.5s;
+}
+
+.NavResume{
+    
+    width: auto;
+    margin: 0 3% 0 27%;
+    align-self: center;
+}
+
+.introWrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+.introTitle{
+    color:white;
+    margin: 26vh 0 0 8vw;
+    font-family: 'Audiowide', cursive;
+    font-size: 30px;
+}
+
+.projectsPageWrapper{
+    padding: 3% 0% 0 3%;
+    gap: 2%;
+    row-gap: 60%;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.projectWrapper{
+    height: auto;
+
+    display: grid;
+    grid-template-areas: "img title github"
+                        "img description website";
+    grid-template-columns:1fr 2.7fr;
+    grid-template-rows: 1fr 3.2fr;
+
+}
+
+.projectsHeader{
+    padding: 5% 0 0 0;
+    text-align: center;
+}
+
+.ProjectImg{
+    margin-right: 5%;
+    grid-area: img;
+    height: 100%;
+    border: 3px solid white;
+}
+
+.projectTitle{
+    padding: 0 0 0 0;
+    grid-area: title;
+    font-family: 'Audiowide', cursive;
+}
+
+.projectDescription{
+    padding: 0 0 0 0;
+    grid-area: description;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.githubIcon{
+    grid-area: github;
+    background-image: url(./Images/githubimg.png);
+    background-size: contain;
+}
+
+.websiteIcon{
+    grid-area: website;
+}
+
+.technologysPage{
+    height: auto;
+    background-color: black;
+}
+
+.techWrapper{
+    height: 20vh;
+    width: 90%;
+    padding: 5% 5% 5% 5%;
+    gap: 5% 5%;
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(6, 1fr);
+
+    justify-items: center;
+    align-items: center;
+}
+
+.Icon{
+    height: 100%;
+}
+
+.TechHeader{
+    text-align: center;
+    padding-top: 5%;
+}
+
+.aboutPage{
+    height: 110vh;
+    background-color: black ;
+}
+
+.aboutHeader{
+    text-align: center;
+    padding: 5% 0 2% 0;
+}
+
+.window{
+    margin: 0 15% 10% 15%;
+    height: 75%;
+    width: 70%;
+    background-color: white;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.NavBar2Wrapper{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    background-color: rgb(148, 148, 148);
+    border-radius: 10px 10px 0 0;
+}
+
+.dots{
+    display: flex;
+    flex-direction: row;
+    gap:8px;
+    padding: 10px;
+}
+
+.dot1{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+
+    background-color:  #FC6058;
+}
+.dot2{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+
+    background-color:#FEC02F;
+}
+.dot3{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+
+    background-color: #2ACA3E;
+}
+
+.contactbutton{
+    font-family: 'Roboto Mono', monospace;
+    padding: 0px 10px 0px 10px;
+    font-size: 36px;
+    text-align: center;
+}
+
+.profileWrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+.profilePic{
+    margin: 8% 20% 0 30%;
+    height: 36%;
+}
+
+.profileText{
+    margin: 5% 0 5% 25%;
+    color:black;
+    text-align: center;
+    font-size: 18px;
+}
+
+.GithubPic{
+    width: 60%;
+    margin:10% 0% 0 30%
+}
+
+.LinkedenPic{
+    width: 61%;
+    margin:5% 10% 0 30%
+}
