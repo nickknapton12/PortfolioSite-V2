@@ -4,6 +4,7 @@ html{
 }
 
 body{
+    background-color: black;
     margin: 0 0 0 0;
 }
 
@@ -19,18 +20,19 @@ p{
 .introPage{
     background-color: black;
     background-image: url(./Images/Background.jpg);
-    background-size:contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position-x: 70%;
-    height: 100vh;
+    height: 980px;
     display: block;
 }
 
 
 .projectsPage{
-    height: 100vh;
+    height: 400px;
     display: block;
     background-color: black;
+    margin: 0 0 5% 0;
 }
 
 h1:hover{
@@ -68,30 +70,34 @@ h4{
 .NavBar{
     margin:0 0 0 0;
     width: 100%;
-    height: 10vh;
+    height: 100px;
     min-height: fit-content;
     background-color: black;
     position: fixed;
 
     display: flex;
     align-content: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
 }
 
 .NavLinks{
-    margin: 0 0 0 3%;
+    margin: 0 0% 0 3%;
     width: 30%;
     display: flex;
     flex-direction: row;
     align-self: center;
     gap: 2vw;
     align-content: flex-start;
+    flex-basis: 50%;
 }
 
 .NavLogo{
     width: auto;
-    margin: 0 0 0 6%;
+    margin: 0 0% 0 0%;
     text-align: center;
     align-self: center;
+    white-space: nowrap;
 }
 
 h4:hover{
@@ -100,10 +106,11 @@ h4:hover{
 }
 
 .NavResume{
-    
     width: auto;
-    margin: 0 3% 0 27%;
+    margin: 0 3% 0 0;
+    flex-basis: 50%;
     align-self: center;
+    text-align: right;
 }
 
 .introWrapper{
@@ -113,12 +120,13 @@ h4:hover{
 
 .introTitle{
     color:white;
-    margin: 26vh 0 0 8vw;
+    margin: 14% 0 0 8%;
     font-family: 'Audiowide', cursive;
     font-size: 30px;
 }
 
 .projectsPageWrapper{
+    height: auto;
     padding: 3% 0% 0 3%;
     gap: 2%;
     row-gap: 60%;
@@ -157,7 +165,7 @@ h4:hover{
 }
 
 .projectDescription{
-    padding: 0 0 0 0;
+    padding: 0 2% 0 0;
     grid-area: description;
     font-family: 'Roboto Mono', monospace;
 }
@@ -178,7 +186,7 @@ h4:hover{
 }
 
 .techWrapper{
-    height: 20vh;
+    height: auto;
     width: 90%;
     padding: 5% 5% 5% 5%;
     gap: 5% 5%;
@@ -192,26 +200,26 @@ h4:hover{
 }
 
 .Icon{
-    height: 100%;
+    height: 200px;
 }
 
 .TechHeader{
     text-align: center;
-    padding-top: 5%;
+    padding-top: 10%;
 }
 
 .aboutPage{
-    height: 110vh;
+    height: 1000px;
     background-color: black ;
 }
 
 .aboutHeader{
     text-align: center;
-    padding: 5% 0 2% 0;
+    padding: 3% 0 2% 0;
 }
 
 .window{
-    margin: 0 15% 10% 15%;
+    margin: 0 15% 5% 15%;
     height: 75%;
     width: 70%;
     background-color: white;
@@ -271,7 +279,7 @@ h4:hover{
 }
 
 .profilePic{
-    margin: 8% 20% 0 30%;
+    margin: 8% 20% 0 37%;
     height: 36%;
 }
 
@@ -290,4 +298,37 @@ h4:hover{
 .LinkedenPic{
     width: 61%;
     margin:5% 10% 0 30%
+}
+
+@media only screen and (max-width: 1615px){
+    .Icon{
+        height: 150px;
+    }
+}
+
+@media only screen and (max-width: 1230px){
+    .Icon{
+        height: 100px;
+    }
+}
+
+@media only screen and (max-width: 1500px){
+    .projectsPageWrapper{
+        grid-template-columns: 1fr;
+    }
+    .projectWrapper{
+        grid-template-columns:0.5fr 2.7fr;
+    }
+    .projectsPage{
+        height: 800px;
+    }
+}
+
+@media only screen and (max-width: 1150px){
+    .NavResume, .NavLinks{
+      display: none;
+    }
+    .NavBar{
+        justify-content: center;
+    }
 }
