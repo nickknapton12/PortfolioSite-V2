@@ -1,3 +1,7 @@
+*{
+    margin:0;
+}
+
 html{
     scroll-behavior:smooth;
     transition: 2.5s;
@@ -29,7 +33,7 @@ p{
 
 
 .projectsPage{
-    height: 400px;
+    height: auto;
     display: block;
     background-color: black;
     margin: 0 0 5% 0;
@@ -154,7 +158,7 @@ h4:hover{
 .ProjectImg{
     margin-right: 5%;
     grid-area: img;
-    height: 100%;
+    height: 130px;
     border: 3px solid white;
 }
 
@@ -205,11 +209,11 @@ h4:hover{
 
 .TechHeader{
     text-align: center;
-    padding-top: 10%;
+    padding-top: 15%;
 }
 
 .aboutPage{
-    height: 1000px;
+    height: auto;
     background-color: black ;
 }
 
@@ -220,7 +224,7 @@ h4:hover{
 
 .window{
     margin: 0 15% 5% 15%;
-    height: 75%;
+    height: auto;
     width: 70%;
     background-color: white;
     border-radius: 10px;
@@ -276,15 +280,17 @@ h4:hover{
 .profileWrapper{
     display: flex;
     flex-direction: row;
+    justify-content:center;
 }
 
 .profilePic{
-    margin: 8% 20% 0 37%;
+    display:block;
+    margin: 8% auto 0 auto;
     height: 36%;
 }
 
 .profileText{
-    margin: 5% 0 5% 25%;
+    margin: 5% 5% 5% 15%;
     color:black;
     text-align: center;
     font-size: 18px;
@@ -292,17 +298,20 @@ h4:hover{
 
 .GithubPic{
     width: 60%;
-    margin:10% 0% 0 30%
+    margin:10% 0% 0 30%;
 }
 
 .LinkedenPic{
     width: 61%;
-    margin:5% 10% 0 30%
+    margin:5% 10% 0 30%;
 }
 
 @media only screen and (max-width: 1615px){
     .Icon{
         height: 150px;
+    }
+    .profileText{
+        font-size: 15px;
     }
 }
 
@@ -315,12 +324,10 @@ h4:hover{
 @media only screen and (max-width: 1500px){
     .projectsPageWrapper{
         grid-template-columns: 1fr;
+        row-gap: 20%;
     }
     .projectWrapper{
         grid-template-columns:0.5fr 2.7fr;
-    }
-    .projectsPage{
-        height: 800px;
     }
 }
 
@@ -328,7 +335,165 @@ h4:hover{
     .NavResume, .NavLinks{
       display: none;
     }
+
     .NavBar{
         justify-content: center;
+    }
+
+    .profileText{
+        font-size:9px;
+        margin: 5% 10% 0% 10%;
+    }
+
+    .profilePic{
+        display: block;
+        height: 42vw;
+        margin: 8% auto 1% auto;
+    }
+
+    .profileWrapper{
+        flex-direction: column;
+    }
+
+    .GithubPic{
+        width: 60%;
+        margin:8% 20% 0 20%;
+    }
+    
+    .LinkedenPic{
+        width: 61%;
+        margin:5% auto 5% auto;
+        display:block;
+    }
+
+    h4{
+        font-size: 60px;
+    }
+}
+
+@media only screen and (max-width: 1350px){
+    .profileText{
+        font-size:12px;
+    }
+}
+
+@media only screen and (max-width: 850px){
+    .Icon{
+        height: 75px;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    h4{
+        font-size: 50px;
+    }
+
+    .introTitle{
+        margin: 24% 0 0 8%;
+        font-size: 23px;
+    }
+
+    .projectsPageWrapper{
+        grid-gap: 3%;
+    }
+
+    .projectWrapper{
+        height: 400px;
+        display: block;
+    }
+
+    .ProjectImg{
+        display: block;
+        margin: 0 auto 3% auto;
+        height: 60%;
+        border: 3px solid white;
+    }
+
+    .projectDescription{
+        padding: 0 2% 0 0;
+        font-family: 'Roboto Mono', monospace;
+        text-align: center;
+    }
+
+    .projectTitle{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    body{
+        width:100vw;
+        border:0;
+        margin: 0;
+        padding: 0;
+    }
+
+    h4{
+        font-size: 30px;
+    }
+    
+    .NavBar{
+        width: 100%;
+    }
+
+    .introPage{
+        overflow: auto;
+        width: 100%;
+        display: block;
+        background-position-x: stretch;
+    }
+
+    .introTitle{
+        margin: 32% 0 0 8%;
+    }
+
+    .projectsHeader{
+        padding: 5% 0 5% 0;
+        text-align:center;
+        width: 100%;
+    }
+
+    .projectsPageWrapper{
+        margin: 0 0 0 0%;
+        padding: 0;
+    }
+
+    .projectsPage{
+        width: 100%;
+    }
+
+    .ProjectImg{
+        height: 40%;
+    }
+
+    .technologysPage{
+        width: 100vw;
+        margin:0;
+    }
+
+    .TechHeader{
+        width: 100%;
+        text-align: center;
+    }
+
+    .Icon{
+        height: 40px;
+    }
+
+    .aboutPage{
+        width:85%;
+    }
+
+    .aboutHeader{
+        margin-left: 17%;
+    }
+    
+    .window{
+        margin: 0 5% 5% 9%;
+        width:100%;
+    }
+
+    .profileText{
+        font-size: 16px;
     }
 }
